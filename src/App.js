@@ -19,14 +19,17 @@ function App() {
       }}
     >
       <button
-        style={{ backgroundColor: buttonColor }}
+        style={{
+          backgroundColor: buttonDisabled ? "gray" : buttonColor,
+          cursor: "pointer",
+        }}
         onClick={() => setButtonColor(newButtonColor)}
         disabled={buttonDisabled}
       >
         Change to {newButtonColor}
       </button>
       <input
-        style={{ marginTop: "10px" }}
+        style={{ marginTop: "10px", cursor: "pointer" }}
         type="checkbox"
         id="disable-button-checkbox"
         defaultChecked={buttonDisabled}
