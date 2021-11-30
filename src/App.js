@@ -28,11 +28,12 @@ function App() {
       <input
         style={{ marginTop: "10px" }}
         type="checkbox"
-        id="enable-button-checkbox"
+        id="disable-button-checkbox"
         defaultChecked={buttonDisabled}
         aria-checked={buttonDisabled}
         onChange={(e) => setButtonDisabled(e.target.checked)}
       />
+      <label htmlFor="disable-button-checkbox">Disable button</label>
     </div>
   );
 }
